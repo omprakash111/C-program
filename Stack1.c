@@ -2,11 +2,11 @@
 #include<stdlib.h>
 int a[5],top=-1,size=5;
 void push(int );//prototype
-int pop();
+void pop();
 void display();
 
 int main()
-{ int n,ch,ele;
+{ int n,ch;
   
 
 
@@ -24,8 +24,8 @@ int main()
 	   break;
    //pop
 
-   case 2:ele=pop();
-         printf("Deleted element is %d",ele);
+   case 2:pop();
+         
 		 break;
    //display
    case 3:
@@ -57,13 +57,13 @@ void push(int n)
 }
 
 //pop
-int pop()
+void pop()
 {
  if(top==-1)
   printf("Stack is underflow \n");
-  else
- // top--;
-  return a[top--];
+  else  
+  printf("Deleted element is %d",a[top--]);
+  
 }
 
 //display
