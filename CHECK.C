@@ -5,5 +5,5 @@ int main()
  int *p="enter";
  printf(p);
 
-
+//
 }
